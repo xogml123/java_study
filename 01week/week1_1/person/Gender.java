@@ -1,5 +1,5 @@
 package week1_1.person;
 
 public enum Gender {
-    MALE, FEMALE
+    여성, 남성
 }

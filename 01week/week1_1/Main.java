@@ -22,13 +22,13 @@ public class Main {
         printStudent.exec();
         printStudent.exec2();
 
-        Person person = new Person("제인", 30, Gender.FEMALE, Married.기혼자, 1);
+        Person person = new Person("제인", 30, Gender.여성, Married.기혼자, 1);
         person.print();
 
         Person person2 = new Person();
         person2.setName("제인");
         person2.setAge(30);
-        person2.setGender(Gender.FEMALE);
+        person2.setGender(Gender.여성);
         person2.setMarried(Married.기혼자);
         person2.setChild(1);
         person2.print();
