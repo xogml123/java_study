@@ -12,7 +12,6 @@ public class MyDate {
         this.day = day;
     }
 
-
     public int getYear() {
         return year;
     }
