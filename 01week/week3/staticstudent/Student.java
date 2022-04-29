@@ -3,9 +3,11 @@ package week3.staticstudent;
 public class Student {
     private static int serialNum = 1000;
     public String studentName;
-    public String studentID;
+    public int studentID;
 
     public Student() {
+        ++serialNum;
+        studentID = serialNum;
     }
 
     public void setStudentName(String studentName) {
@@ -13,7 +15,6 @@ public class Student {
     }
 
     public static int getSerialNum() {
-        return ++serialNum;
+        return serialNum;
     }
-
 }
