@@ -3,8 +3,8 @@ package week4.purchase;
 
 public class Customer {
 
-    private Integer id;
-    private String name;
+    protected Integer id;
+    protected String name;
     public Integer bonusPoint;
     protected Double discountRate;
     protected Double accumulationRate;

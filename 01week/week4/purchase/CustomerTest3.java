@@ -31,7 +31,6 @@ public class CustomerTest3 {
         for (Customer customer : customers) {
             System.out.println(customer.showCustomerInfo());
         }
-        System.out.println("담당 상담원번호는 12345 입니다");
         System.out.println("====== 할인율과 보너스 포인트 계산 ======");
         for (Customer customer : customers) {
             System.out.println(customer.getName() + " 님이 " + customer.calcPrice(10000) + "원 지불하셨습니다.");

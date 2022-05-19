@@ -9,21 +9,12 @@ public class Player {
         this.levelStrategy = new Level1Strategy();
     }
 
-    public void jump() {
-        levelStrategy.jump();
-    }
-    public void run() {
-        levelStrategy.run();
-    }
-    public void turn() {
-        levelStrategy.turn();
-    }
     public void play(int time) {
-        run();
+        levelStrategy.run();
         for(int i =0; i<time; i++) {
-            jump();
+            levelStrategy.jump();
         }
-        turn();
+        levelStrategy.turn();
     }
     public void upgradeLevel(LevelStrategy levelStrategy) {
         this.levelStrategy = levelStrategy;
